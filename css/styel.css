@@ -1,0 +1,19 @@
+p {
+	background-color: grey;
+	text-align: center;
+	display: inline;
+    }
+     p span {
+			color: maroon;
+			text-align: center;
+			/*display: inline-grid;*/
+		}
+		.highlight{ 
+		background-color: green;
+		color:black;
+	     display: inline;
+	 }
+
+	 .divstyle{
+	 	text-align: center;
+	 }
