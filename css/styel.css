@@ -1,19 +1,95 @@
-p {
-	background-color: grey;
-	text-align: center;
-	display: inline;
-    }
-     p span {
-			color: maroon;
-			text-align: center;
-			/*display: inline-grid;*/
+		body{
+			height: 100%;
+			width: 100%;
 		}
-		.highlight{ 
-		background-color: green;
-		color:black;
-	     display: inline;
-	 }
+		h1{
+			text-align: center;
+			font-size: 60px;
 
-	 .divstyle{
-	 	text-align: center;
+		}
+
+	.row{
+		position: absolute;
+		display: inline-flex;
+	}
+
+		.rightText{
+		     	
+		     	border-left:2px solid black;
+		     	border-bottom: 2px solid black;
+		     	width: 80px;
+		        top: 0px;
+		        padding: 2px;
+		        right: 0px;
+		        float: right;
+		        background-color: #9400D3;
+		        font-size: 25px;
+
+
+		     }
+
+	          .col{
+	          	border:2px solid black;
+	          	width: 33%;
+	          	height:33%;
+	          	margin-right:20px;
+	          	background-color: #BA55D3;
+
+
+
+	          }
+	          .spacing{
+	          	padding-top: 10px;
+	          	padding: 20px;
+	          	background-color:#BA55D3;
+	          	font-size: 20px
+	          	
+	          }
+	          .clr1{
+	          	background-color: yellow;
+	          }
+	          .clr2{
+	          	background-color: red;
+	          }
+	          .clr3{
+	          	background-color: pink;
+	          }
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ .col{
+	 	height:100%;
+	 	width:80%;
+
 	 }
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .col{
+	 	height:100%;
+	 	width:80%;
+	 	margin-bottom: 10px;
+	 }
+	
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width:991px) {
+ .col{
+	 	height:100%;
+	 	width:80%;
+	 	margin-bottom: 10px;
+	 }
+	  .row{
+		display: inline;
+	}
+} 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	 .col{
+	 	height:100%;
+	 	width:80%;
+	 	margin-bottom: 10px;
+	 }
+	  .row{
+		display: inline;
+	}
+}
